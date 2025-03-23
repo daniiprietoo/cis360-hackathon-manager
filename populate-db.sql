@@ -53,15 +53,15 @@ VALUES
 -- Populate TEAMS table with multiple teams per hackathon
 INSERT INTO Teams (HackathonID, TeamName, LeaderID)
 VALUES 
-  (1, 'Team Innovators', 2),   -- Hackathon 1, leader Bob (UserID 2)
-  (1, 'Team Creators', 3),      -- Hackathon 1, leader Charlie (UserID 3)
-  (1, 'Team Mavericks', 4),     -- Hackathon 1, leader Diana (UserID 4)
-  (2, 'Team Pioneers', 5),      -- Hackathon 2, leader Evan (UserID 5)
-  (2, 'Team Visionaries', 7),   -- Hackathon 2, leader George (UserID 7)
-  (3, 'Team Techies', 8),       -- Hackathon 3, leader Hannah (UserID 8)
-  (3, 'Team Entrepreneurs', 9), -- Hackathon 3, leader Ian (UserID 9)
-  (4, 'Team Global', 10),       -- Hackathon 4, leader Julia (UserID 10)
-  (4, 'Team Innovate', 12);     -- Hackathon 4, leader Laura (UserID 12)
+  ('Team Innovators', 2),   -- Hackathon 1, leader Bob (UserID 2)
+  ('Team Creators', 3),      -- Hackathon 1, leader Charlie (UserID 3)
+  ('Team Mavericks', 4),     -- Hackathon 1, leader Diana (UserID 4)
+  ('Team Pioneers', 5),      -- Hackathon 2, leader Evan (UserID 5)
+  ('Team Visionaries', 7),   -- Hackathon 2, leader George (UserID 7)
+  ('Team Techies', 8),       -- Hackathon 3, leader Hannah (UserID 8)
+  ('Team Entrepreneurs', 9), -- Hackathon 3, leader Ian (UserID 9)
+  ('Team Global', 10),       -- Hackathon 4, leader Julia (UserID 10)
+  ('Team Innovate', 12);     -- Hackathon 4, leader Laura (UserID 12)
 
 -- Populate TEAM_MEMBERS table with multiple members for each team
 INSERT INTO TeamMembers (TeamID, UserID)
