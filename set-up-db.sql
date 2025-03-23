@@ -53,12 +53,8 @@ CREATE TABLE HackathonLocations (
 -- 5. Create the TEAMS table (strong entity)
 CREATE TABLE Teams (
     TeamID INT AUTO_INCREMENT PRIMARY KEY,
-    HackathonID INT NOT NULL,
     TeamName VARCHAR(255) NOT NULL,
     LeaderID INT NOT NULL,
-    FOREIGN KEY (HackathonID) REFERENCES Hackathons(HackathonID)
-        ON DELETE CASCADE
-        ON UPDATE CASCADE,
     FOREIGN KEY (LeaderID) REFERENCES Users(UserID)
         ON DELETE RESTRICT
         ON UPDATE CASCADE
